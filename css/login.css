@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-image: url(https://wallpaperaccess.com/full/2159510.jpg);
+    background-size: cover;
+}
+
+.LOGIN {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   padding-left: 40px;
+    width: 500px;
+    height: 900px;
+    background-color: rgba(255, 255, 0, 0.55);
+    border-radius: 18px;
+
+}
+
+.login input {
+    width: 350px;
+    color: white;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    background-image: linear-gradient(to right, green 35%, aqua 65%);
+    border-radius: 10px;
+}
+
+.login input::placeholder {
+    color: white;
+}
+
+.login button {
+    width: 60px;
+    height: 35px;
+    background-color: rgba(255, 0, 0, 0.83);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+
+}
+.login button:active{
+    transform: scale(0.7);
+}
+.login button:focus{
+    background-color: blue;
+}
+.login button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.married{
+    display: flex;
+    align-items: center;
+}
+
+.ppp {
+    display: flex;
+    align-items: center;
+}
+
+.ppp input {
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(to right, fuchsia 30%, brown 40%);
+}
+
+.rasm_1 {
+    border-radius: 10px;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.rasm_1 img {
+    width: 20px;
+    height: 30px;
+}
+.login_a input{
+    width: 150px;
+    height: 25px;
+}
+.login_s select{
+    color: black;
+    width: 120px;
+    height: 40px;
+    background-color: #1ca7a7;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.married input{
+    width: 30px;
+}
+.button input:active{
+    transform: scale(0.7);
+}
+.button input:focus{
+    background-color: blue;
+}
+.button input:hover {
+    background-color: aqua;
+    color: black;
+}
+.button input{
+    cursor: pointer;
+    background-image: linear-gradient(to right, aqua 30%,green 65%);
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dacument registratsiya</title>
+    <link rel="icon
+" href="https://wallpapercave.com/wp/wp4676582.jpg">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<h1>Register into your website</h1>
+<div class="LOGIN">
+    <div class="login">
+
+        <input type="text" placeholder="name">
+        <input type="text" placeholder="surname">
+        <div class="login_a">
+            <p>Age</p>
+            <input type="date">
+        </div>
+        <div class="married">
+            <p>Married</p>
+            <input type="checkbox">
+        </div>
+        <input type="text" placeholder="telephone">
+
+
+        <p>Password</p>
+        <input class="password" type="password" id="password1">
+        <p class="error_length">8 gacha</p>
+        <p>Confirm Password</p>
+        <input class="password" type="password" id="password2">
+
+
+        <div class="ppp">
+            <input class="checkbox" type="checkbox">
+            <p>Show password</p>
+        </div>
+        <div class="login_s">
+            <p>Location</p>
+            <select name="">
+                <option value="">Samarqand</option>
+                <option value="">Toshken</option>
+                <option value="">Buxoro</option>
+                <option value="">Andijon</option>
+                <option value="">Farg'ona</option>
+            </select>
+            <select name="" id="">
+                <option value="">Ishtxon</option>
+                <option value="">Payariq</option>
+                <option value="">Pastar'om</option>
+                <option value="">Bulung'ur</option>
+                <option value="">Kattaqurg'on</option>
+            </select>
+        </div>
+        <p>Photo</p>
+        <input type="file">
+        <div class="button">
+            <input type="button" value="Register">
+        </div>
+
+
+    </div>
+</div>
+<script>
+
+
+    let password = document.querySelectorAll('.password'),
+        // password1 = document.querySelector("#password1"),
+        // password2 = document.querySelector('#password2'),
+        password1 = document.querySelector('#password1'),
+        password2 = document.querySelector('#password2'),
+        // error_length = document.querySelector('.error_length'),
+        error_length = document.querySelector('.error_length'),
+        checkbox = document.querySelector('.checkbox');
+    checkbox.addEventListener('click', () => {
+        password.forEach(item => {
+            if (item.type === "text") {
+                item.type = "password"
+
+            } else if (item.type === "password") {
+                item.type = 'text'
+            }
+        })
+
+
+    })
+    password.forEach(item => {
+        console.log(item)
+    })
+    // error_length.style.display = "none"
+    // password1.addEventListener('input',()=>{
+    //     if (password1.value.length < 8){
+    //         console.log('8 gacha')
+    //         error_length.style.display = ""
+    //     }else {
+    //         console.log(true)
+    //         error_length.style.display = "none"
+    //     }
+    // })
+    error_length.style.display = "none"
+    password1.addEventListener('input', () =>{
+        if (password1.value.length < 8){
+            console.log('8 gacha ')
+            error_length.style.display = ""
+        }else {
+            console.log(true)
+            error_length.style.display= "none"
+        }
+    })
+    // password2.addEventListener('input',()=>{
+    //     if (password2.value !== password1.value){
+    //         console.log(false)
+    //     }else {
+    //         console.log(true)
+    //     }
+    // }
+   error_length.style.display = "none"
+    password2.addEventListener('input', () => {
+        if (password2.value.length < 8) {
+            console.log('8 gacha ')
+            error_length.style.display = ""
+        } else {
+            console.log(true)
+            error_length.style.display = "none"
+        }
+    })
+</script>
+
+
+</body>
+</html>
